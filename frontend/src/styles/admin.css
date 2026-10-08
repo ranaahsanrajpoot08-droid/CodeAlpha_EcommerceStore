@@ -1,0 +1,25 @@
+.admin-wrap { display: grid; grid-template-columns: 220px 1fr; gap: 1.5rem; padding-top: 1.5rem; padding-bottom: 2.5rem; flex: 1; width: 100%; }
+.admin-sidebar { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; height: fit-content; display: flex; flex-direction: column; gap: 0.25rem; position: sticky; top: 84px; }
+.admin-sidebar h3 { padding: 0 0.5rem; margin-bottom: 0.5rem; }
+.admin-sidebar a { padding: 0.6rem 0.75rem; border-radius: 8px; font-weight: 600; color: var(--muted); }
+.admin-sidebar a:hover { background: #f3f4f6; color: var(--text); }
+.admin-sidebar a.active { background: #eef2ff; color: var(--primary); }
+.admin-content { min-width: 0; }
+
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1rem; margin-bottom: 1.25rem; }
+.stat-card { display: flex; align-items: center; gap: 1rem; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem; }
+.stat-card h2 { margin: 0; font-size: 1.6rem; }
+.stat-card p { margin: 0; font-size: 0.85rem; }
+.stat-icon { font-size: 1.8rem; background: #eef2ff; width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+
+.table-product { display: flex; align-items: center; gap: 0.75rem; font-weight: 600; }
+.table-product img { width: 44px; height: 44px; border-radius: 8px; object-fit: cover; background: #f3f4f6; }
+.stock-input { width: 84px; padding: 0.35rem 0.5rem; }
+.row-actions { display: flex; gap: 0.5rem; }
+.filter-select { width: auto; min-width: 170px; }
+
+@media (max-width: 800px) {
+  .admin-wrap { grid-template-columns: 1fr; }
+  .admin-sidebar { flex-direction: row; flex-wrap: wrap; position: static; align-items: center; }
+  .admin-sidebar h3 { width: 100%; }
+}
